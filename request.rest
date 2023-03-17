@@ -1,0 +1,94 @@
+POST http://localhost:3000/api/services
+Content-Type: application/json
+
+{
+    "name": "Algum serviço",
+    "description": "Alguma descrição",
+    "price": 1600,
+    "image": "https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE4wB79?ver=e222"
+}
+
+###
+GET http://localhost:3000/api/services
+
+###
+GET http://localhost:3000/api/services/6411da30752b2a3953ad8b30
+
+###
+DELETE http://localhost:3000/api/services/6411da05813bcde199201743
+
+###
+PUT http://localhost:3000/api/services/6411da30752b2a3953ad8b30
+Content-Type: application/json
+
+{
+    "name": "TESTE ATUALIZAÇÂO",
+    "description": "Alguma descrição",
+    "price": 2500,
+    "image": "https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE4wB79?ver=e222"
+}
+
+###
+
+POST http://localhost:3000/api/parties
+Content-Type: application/json
+
+{
+    "title": "Meu evento Bala",
+    "author": "Carlão",
+    "description": "Uma festa de aniversário",
+    "budget": 3000,
+    "image": "https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE4wB79?ver=e222",
+    "services": [
+        {
+            "name": "Algum serviço 1",
+            "description": "Alguma descrição",
+            "price": 3000,
+            "image": "https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE4wB79?ver=e222"
+        },
+        {
+            "name": "Algum serviço 2",
+            "description": "Alguma descrição",
+            "price": 1600,
+            "image": "https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE4wB79?ver=e222"
+        }
+    ]
+}
+
+###
+GET http://localhost:3000/api/parties
+Content-Type: application/json
+
+###
+GET http://localhost:3000/api/parties/64137d9374a80d0beaf72087
+Content-Type: application/json
+
+###
+DELETE http://localhost:3000/api/parties/64137d9374a80d0beaf7208
+Content-Type: application/json
+
+###
+PUT http://localhost:3000/api/parties/64137e6474a80d0beaf72089
+Content-Type: application/json
+
+{
+    "title": "Meu evento nice",
+    "author": "Carlão",
+    "description": "Uma festa de aniversário",
+    "budget": 10000,
+    "image": "https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE4wB79?ver=e222",
+    "services": [
+        {
+            "name": "Algum serviço 1",
+            "description": "Alguma descrição",
+            "price": 3000,
+            "image": "https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE4wB79?ver=e222"
+        },
+        {
+            "name": "Algum serviço 2",
+            "description": "Alguma descrição",
+            "price": 1600,
+            "image": "https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE4wB79?ver=e222"
+        }
+    ]
+}
